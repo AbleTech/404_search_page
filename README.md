@@ -24,7 +24,7 @@ In order for the script to run you will need to enter your Google API keys and d
 
 ### In Javascript
 #### 404.js
-```
+```javascript
 1: var googleSearchKey = "[Enter your Google Public Key Here]";
 2: var googleSearchEngineID = "[Enter your Search Engine ID Here]";
 3: var searchPhrase = "";
@@ -33,7 +33,7 @@ In order for the script to run you will need to enter your Google API keys and d
 
 ### In CoffeScript
 #### _google_search_handler.js.coffee
-```
+```coffeescript
 4: constructor: ({@currentPath}) ->
 5:   @googleSearchKey = '[Enter your Google Public Key Here]'
 6:   @googleSearchEngineID = '[Enter your Search Engine ID Here]'
@@ -44,25 +44,28 @@ In order for the script to run you will need to enter your Google API keys and d
 
 ## Adding to your site
 Follow these steps to add the Search functionality to your page:
-1. Create a 404 page for your site (How this is done will vary depending on how you host your site)
-2. Add the following code to your 404 page:
-```
-<div id="googleResults">
-  <div class="result" style="background: none; text-align: center;">
-    <!--[if !IE]>-->
-    <div class="spinner">
-      <div class="dot1"></div>
-      <div class="dot2"></div>
+
+- Create a 404 page for your site (How this is done will vary depending on how you host your site)
+- Add the following code to your 404 page:
+
+```html
+  <div id="googleResults">
+    <div class="result" style="background: none; text-align: center;">
+      <!--[if !IE]>-->
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+      <!--<![endif]-->
+      <!--[if lte IE 9]>
+      <div class="spinner gifspinner"></div>
+      <![endif]-->
+      <p class="description">
+        Hunting for similar pages...
+      </p>
     </div>
-    <!--<![endif]-->
-    <!--[if lte IE 9]>
-    <div class="spinner gifspinner"></div>
-    <![endif]-->
-    <p class="description">
-      Hunting for similar pages...
-    </p>
   </div>
-</div>
 ```
-3. Include a script tag inside your body but prior to the googleResults div
-4. Point the script tags src to either 404.js or your file containing the coffescript
+
+- Include a script tag inside your body but prior to the googleResults div
+- Point the script tags src to either 404.js or your file containing the coffescript
