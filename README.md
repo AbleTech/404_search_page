@@ -70,3 +70,4 @@ Follow these steps to add the Search functionality to your page:
 - Include a script tag inside your body but prior to the googleResults div
 - Point the script tags src to either 404.js or your file containing the coffescript
 - Add 404.css to your 404 page
+- For IE support add ajax-loader.gif to your images folder or edit .gifspinner in 404.css
