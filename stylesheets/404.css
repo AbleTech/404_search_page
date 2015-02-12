@@ -34,7 +34,7 @@
 }
 
 .gifspinner{
-  background: image-url('ajax-loader.gif') 0 0 no-repeat;
+  background: image-url('images/ajax-loader.gif') 0 0 no-repeat;
 }
 
 .dot1, .dot2 {
