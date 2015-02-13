@@ -3,7 +3,7 @@
 While some sites set a goal to have a visually interesting 404 page, a lot of websites lack any functionality that benefits the user who is attempting to navigate the site.
 With this code you can provide your users with the ability to see areas on your site that may be related to their navigation error by utilizing Google's Custom Site Search API.
 
-Here is an example how we used it on the Abletech website to provide related pages to the URL [https://www.abletech.nz/dashboard/tv](https://www.abletech.nz/dashboard/tv).
+Here is an example how we used it on the Abletech website to provide related pages to the URL [https://abletech.nz/dashboard/tv](https://abletech.nz/dashboard/tv).
 ![Example 404 page](https://raw.github.com/OliverGreenaway/404_search_page/master/images/example.png)
 
 ## Setting up a Google Custom Search Key
